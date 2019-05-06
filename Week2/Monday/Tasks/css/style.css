@@ -3,8 +3,9 @@
     padding: 0;
     margin: 0;
 }
+
 .navBar{
-    width: 500px;
+    width: 0px;
     height: 100%;
     background-color: grey;
     position: fixed;
@@ -12,13 +13,41 @@
     left: 0;
 }
 
-.hamburger{
+.open{
+    width: 500px;
+}
+
+.icon{
+    padding: 10px;
     position: fixed;
     top: 0;
     left: 0;
-    
+    z-index: 10000;
+    font-size: 2em;
 }
 
-.open{
-    width: 500px;
+
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+#button{
+    position: absolute;
+    left: 500px;
+    top: 100px;
+    padding: 20px;
 }
