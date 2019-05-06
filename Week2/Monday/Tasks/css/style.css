@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navBar{
+    width: 500px;
+    height: 100%;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.hamburger{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+.open{
+    width: 500px;
+}
