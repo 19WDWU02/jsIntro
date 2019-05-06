@@ -58,3 +58,20 @@ document.write("<ul>");
         document.write("</li>");
     }
 document.write("</ul>");
+
+
+
+
+
+
+
+
+// namePrompt();
+// Functions
+
+function namePrompt(){
+    console.log("this is coming from namePrompt");
+    var name = prompt("What is your name?");
+    console.log("Hello " + name);
+    document.getElementById("welcoming").innerHTML += "<h4>Hello "+name+" , welcome to the site</h4>";
+}
