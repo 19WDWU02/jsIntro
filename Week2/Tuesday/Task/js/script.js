@@ -1,6 +1,7 @@
-var items = [];
 
+var items = [];
 function addToList(){
+
     // console.log("adding to list");
     var newItem = prompt("What item are you wanting to add to the list?");
     if(newItem.length > 0){
