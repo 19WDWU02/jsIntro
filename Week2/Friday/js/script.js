@@ -49,3 +49,62 @@ function validate(value, minLength, max){
     }
 
 }
+
+
+
+
+
+// Object
+var carType;
+var carColour;
+var carYear;
+
+var car = {
+    type: 'Honda',
+    colour: 'red',
+    year: 2009,
+    warrent: false,
+    owners: ['Sam', 'Jack', 'Jess']
+}
+console.log(car);
+console.log(car.year);
+console.log(car['year']);
+car.year = 2019;
+console.log(car);
+console.log(car.year);
+
+car.km = 10000;
+console.log(car);
+
+var items = [
+    {
+        name: 'Apples',
+        price: 2.50,
+        inStock: true
+    },
+    {
+        name: 'Oranges',
+        price: 1.45,
+        inStock: false
+    },
+    {
+        name: 'Pears',
+        price: 3.00,
+        inStock: true
+    }
+];
+
+for (var i = 0; i < items.length; i++) {
+    console.log(items[i]);
+    if(items[i].inStock === true){
+        document.getElementById('list').innerHTML += '<li>' + items[i].name + ' - $' +  items[i].price+'</li>';
+    }
+}
+
+
+var days = [
+    {
+        day: 'monday',
+        tasks: ['cleaning', 'shopping']
+    }
+]
